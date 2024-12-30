@@ -1,0 +1,199 @@
+@import url("./color.css");
+
+* {
+  transition: background 200ms linear;
+  transition: background-color 200ms linear;
+}
+
+.dark {
+  /* dark theme variables */
+  --text-primary: var(--bgTextColor);
+  --memsection-bg: var(--black);
+  --memsection-bg-text: var(--hero-section-bg-text);
+  --memberTag-fill-color: transparent;
+  --memberTag-text-shadow: none;
+  --wingTag-bg: rgba(75, 74, 74, 0.643);
+  --text-outline: var(--Grey-light-3);
+  --devcard-bg: var(--offBlack);
+  --devcard-bottom: var(--surface-color);
+  --devcard-text: #ececec;
+  --footer-bg: var(--white);
+  --footer-text: var(--black);
+  --icon-text: var(--white);
+  --events-bg-color: var(--black);
+  --event-style: var(--white);
+  --event-button: var(--Grey-light-3);
+  --event-techno-bg: var(--black);
+  --techno-event-card-bg: var(--Grey-dark-5);
+  --event-card-box-shadow: none;
+  --abacus-border: transparent;
+  --reportbox-bg: var(--white);
+  --temp-color: var(--black);
+  --hero-section-bg: var(--black);
+  --hero-section-text: var(--Grey-light-3);
+  --hero-section-bg-text: var(--bgTextColor);
+  --network-lottie-invert-amount: 0;
+  --about-section-bg: var(--black);
+  --about-section-text: var(--Grey-light-3);
+  --css-logo-invert-amount: 1;
+  --scrollanime-invert-amount: 0;
+  --event-section-bg: var(--black);
+  --executive-section-text: var(--Grey-dark-1);
+  --executive-section-bg: var(--black);
+  --executive-card-text: var(--Grey-light-4);
+  --executive-card-bg: var(--offBlack);
+  --upcomingEvents-section-bg: var(--black);
+  --upcomingEvents-section-text: var(--Grey-light-3);
+  --upev-lotte-invert-amount: 0;
+  --navigation-button-bg: var(--Grey-light-3);
+  --animate-color1: blue;
+  --animate-color2: rgb(151, 3, 151);
+  --devtag-hover: rgb(197, 194, 194);
+  --devselect-text: white;
+  --theme-pink: var(--white);
+  --report-color: rgb(151, 3, 151);
+  --about-color: var(--heading-color);
+  --animation-color: radial-gradient(
+    30.75% 49.12% at 30.75% 38.37%,
+    var(--sky-blue) 0%,
+    var(--dark-blue) 100%
+  );
+  --about-shadow: #282828;
+  --about-shadow-color: #282828;
+  --about-section-typed-text-color: rgba(240, 238, 238, 0.8);
+  --devcard-socials: rgba(0, 0, 0, 0.5);
+  --wing-page-bg3: rgba(32, 25, 26, 0.95);
+  --wing-page-bg2: rgba(18, 40, 40, 0.95);
+  --wing-page-bg1: rgba(23, 19, 19, 0.95);
+  --wing-card-bg1: rgba(29, 25, 25, 0.9);
+  --wing-card-bg2: rgba(30, 33, 39, 0.9);
+  --wing-card-bg: rgba(0, 0, 0, 0.3);
+  --wing-white: rgb(0, 0, 0);
+  --wing-black: rgb(255, 255, 255);
+  --wing-tooltip-bg: rgba(240, 238, 238, 0.8);
+  --carousel-shadow: #666666;
+  --border-event: #373850;
+  --reverse-event-techno-bg: rgba(255, 255, 255, 0.15);
+  --error-page-bg3: rgba(32, 25, 26, 0.95);
+  --error-page-bg2: rgba(18, 40, 40, 0.95);
+  --error-page-bg1: rgba(23, 19, 19, 0.95);
+  --events-section-bg: var(--events-bg);
+  --events-button-bg: #2c0022;
+  --events-card-bg-2: #292232;
+  --events-heading-text: rgba(199, 203, 203, 0.8);
+  --enigma-section-text: var(--Grey-dark-1);
+  --abacus-heading: var(--Grey-dark-3);
+  --abacus-shadow: rgba(78, 68, 40, 0.6) -1px -1px 6px,
+    rgba(74, 74, 146, 0.6) 1px 1px 6px;
+  --abacus-register-bg: #181818;
+  --footer-contactSectionLogo-filter: 1;
+  /* --events-heading-text:  rgb(21 1 1 / 20%); */
+  --events-section-text: var(--Grey-dark-2);
+  --event-card-shadow: rgb(21, 20, 20);
+  --signIn-btn-text: pink;
+  --signIn-btn-bg: var(--theme-primary);
+  --spinner-bg:rgba(0, 0, 0, 0.834);
+}
+
+.light {
+  /* light theme variables */
+  --text-primary: var(--bgTextColor);
+  --memsection-bg: var(--Grey-light-2);
+  --memsection-bg-text: hsl(0, 0%, 85%);
+  --memberTag-fill-color: var(--theme-primary);
+  --wingTag-bg: linear-gradient(
+    -125deg,
+    var(--theme-primary),
+    var(--theme-secondary)
+  );
+  --memberTag-text-shadow: 1px 3px 6px var(--offBlack);
+  --text-outline: hsl(317, 45%, 45%);
+  --events-heading-text: rgba(0, 0, 0, 0.2);
+  --devcard-bg: var(--primary-light);
+  --devcard-bottom: rgba(248, 246, 246, 0.8);
+  --devcard-text: var(--black);
+  --footer-bg: var(--black);
+  --footer-text: var(--white);
+  --icon-text: var(--bgTextColor);
+  --events-bg-color: var(--Grey-light-3);
+  --event-style: var(--black);
+  --event-button: var(--Grey-dark-5);
+  --event-techno-bg: var(--Grey-light-3);
+  --techno-event-card-bg: var(--primary-light);
+  --event-card-box-shadow: 1px 2px 4px rgba(40, 40, 40, 0.5);
+  --abacus-border: var(--bgTextColor);
+  --reportbox-bg: rgb(0, 0, 0);
+  --temp-color: var(--white);
+  --hero-section-bg: linear-gradient(
+    200deg,
+    hsl(340, 95%, 80%) 0%,
+    hsl(340, 85%, 89%) 30%,
+    hsl(0, 8%, 95%) 70%
+  );
+  --events-section-bg: var(--events-bg-light);
+  --hero-section-text: var(--Grey-dark-1);
+  --hero-section-bg-text: rgb(205, 204, 204);
+  --network-lottie-invert-amount: 1;
+  --about-section-bg: radial-gradient(
+    farthest-side at 0 50%,
+    hsl(340, 95%, 85%) 0%,
+    hsl(340, 85%, 95%) 60%,
+    hsl(0, 8%, 95%) 90%
+  );
+  --about-section-text: var(--Grey-dark-1);
+  --css-logo-invert-amount: 0;
+  --scrollanime-invert-amount: 1;
+  --event-section-bg: var(--Grey-light-3);
+  --executive-section-text: var(--Grey-dark-3);
+  --executive-section-bg: var(--Grey-light-3);
+  --executive-card-text: var(--Grey-light-3);
+  --executive-card-bg: rgb(97, 97, 97);
+  --events-section-text: var(--Grey-dark-1);
+  --upcomingEvents-section-bg: var(--Grey-light-3);
+  --upcomingEvents-section-text: var(--offBlack);
+  --upev-lotte-invert-amount: 1;
+  --navigation-button-bg: var(--theme-primary);
+  --animate-color1: rgb(151, 3, 151);
+  --animate-color2: rgb(78, 9, 239);
+  --devtag-hover: gray;
+  --devselect-text: white;
+  --theme-pink: rgb(232, 9, 172);
+  --report-color: rgb(78, 9, 239);
+  --animation-color: radial-gradient(
+    30.75% 49.12% at 30.75% 38.37%,
+    var(--sky-blue-light) 0%,
+    var(--blue-dark) 100%
+  );
+  --about-shadow: var(--Grey-light-4);
+  --about-shadow-color: var(--Grey-light-4);
+  --about-section-typed-text-color: var(--offBlack);
+  --devcard-socials: rgb(255, 255, 255, 0.25);
+  --wing-page-bg1: rgba(252, 156, 188, 0.9);
+  --wing-page-bg2: rgba(251, 203, 219, 0.9);
+  --wing-card-bg1: rgba(194, 194, 194, 0.9);
+  --wing-card-bg2: rgba(255, 213, 213, 0.9);
+  --wing-page-bg3: rgba(243, 241, 241, 0.9);
+  --wing-card-bg: rgba(255, 255, 255, 0.3);
+  --wing-white: rgb(255, 255, 255);
+  --wing-black: rgb(0, 0, 0);
+  --wing-tooltip-bg: rgba(248, 7, 87, 0.8);
+  --carousel-shadow: rgb(202, 78, 89);
+  --border-event: #4a54ea;
+  --reverse-event-techno-bg: var(--wing-white);
+  --error-page-bg1: rgba(252, 156, 188, 0.9);
+  --error-page-bg2: rgba(251, 203, 219, 0.9);
+  --error-page-bg3: rgba(243, 241, 241, 0.9);
+  --events-button-bg: hsl(330, 100%, 100%);
+  --events-card-bg-2: rgba(245, 255, 255, 0.95);
+  --enigma-section-text: var(--Grey-light-4);
+  --abacus-heading: var(--Grey-dark-2);
+  --abacus-shadow: rgb(255 215 77 / 60%) -1px -1px 6px,
+    rgb(124 127 255 / 60%) 1px 1px 6px;
+  --abacus-register-bg: #eaeaea;
+  --footer-contactSectionLogo-filter: 0;
+  --events-section-text: var(--Grey-dark-3);
+  --event-card-shadow: grey;
+  --signIn-btn-text: black;
+  --signIn-btn-bg: #f0eeee;
+  --spinner-bg:rgba(255, 255, 255, 0.834);
+}
